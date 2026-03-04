@@ -54,16 +54,16 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
           leftCarouselItems={[
-            { imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg", imageAlt: "Clean bright living room" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg", imageAlt: "Professional residential cleaning" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-holding-rag-detergent-cleaning-cooker_651396-2881.jpg", imageAlt: "Sparkling clean kitchen" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/happy-woman-with-bottle-spray-cleanser-cleaning-oven-home-kitchen_231208-13610.jpg", imageAlt: "Deep professional cleaning service" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg?_wi=1", imageAlt: "Clean bright living room" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg?_wi=1", imageAlt: "Professional residential cleaning" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-holding-rag-detergent-cleaning-cooker_651396-2881.jpg?_wi=1", imageAlt: "Sparkling clean kitchen" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/happy-woman-with-bottle-spray-cleanser-cleaning-oven-home-kitchen_231208-13610.jpg?_wi=1", imageAlt: "Deep professional cleaning service" }
           ]}
           rightCarouselItems={[
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg", imageAlt: "Move-out cleaning service" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/smiling-real-estate-agent-talking-with-couple-interested-buying-new-home_637285-6081.jpg", imageAlt: "Realtor program partnership" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-holding-rag-detergent-cleaning-cooker_651396-2881.jpg", imageAlt: "Professional kitchen cleaning" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg", imageAlt: "Immaculate living spaces" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg?_wi=2", imageAlt: "Move-out cleaning service" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/smiling-real-estate-agent-talking-with-couple-interested-buying-new-home_637285-6081.jpg?_wi=1", imageAlt: "Realtor program partnership" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-holding-rag-detergent-cleaning-cooker_651396-2881.jpg?_wi=2", imageAlt: "Professional kitchen cleaning" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg?_wi=2", imageAlt: "Immaculate living spaces" }
           ]}
           carouselPosition="right"
         />
@@ -96,15 +96,15 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Residential Cleaning",              description: "Regular home cleaning tailored to your schedule. Weekly, bi-weekly, or monthly service options with experienced professionals who treat your home like their own.",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg",              imageAlt: "Residential cleaning service"
+              title: "Residential Cleaning",              description: "Regular home cleaning tailored to your schedule. Weekly, bi-weekly, or monthly service options with experienced professionals who treat your home like their own.",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg?_wi=3",              imageAlt: "Residential cleaning service"
             },
             {
               id: 2,
-              title: "Deep Cleaning",              description: "Thorough, detailed cleaning of every corner. Perfect for seasonal refreshes, post-renovation cleanup, or when your home needs professional restoration.",              imageSrc: "http://img.b2bpic.net/free-photo/happy-woman-with-bottle-spray-cleanser-cleaning-oven-home-kitchen_231208-13610.jpg",              imageAlt: "Professional deep cleaning"
+              title: "Deep Cleaning",              description: "Thorough, detailed cleaning of every corner. Perfect for seasonal refreshes, post-renovation cleanup, or when your home needs professional restoration.",              imageSrc: "http://img.b2bpic.net/free-photo/happy-woman-with-bottle-spray-cleanser-cleaning-oven-home-kitchen_231208-13610.jpg?_wi=2",              imageAlt: "Professional deep cleaning"
             },
             {
               id: 3,
-              title: "Move-Out Cleaning",              description: "Complete end-of-lease cleaning that ensures you get your full security deposit back. We handle every detail with meticulous attention.",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg",              imageAlt: "Move-out cleaning specialist"
+              title: "Move-Out Cleaning",              description: "Complete end-of-lease cleaning that ensures you get your full security deposit back. We handle every detail with meticulous attention.",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg?_wi=4",              imageAlt: "Move-out cleaning specialist"
             }
           ]}
         />
@@ -123,13 +123,13 @@ export default function LandingPage() {
           gridVariant="three-columns-all-equal-width"
           products={[
             {
-              id: "1",              name: "Pre-Showing Refresh",              price: "Starting $199",              imageSrc: "http://img.b2bpic.net/free-photo/smiling-real-estate-agent-talking-with-couple-interested-buying-new-home_637285-6081.jpg",              imageAlt: "Pre-showing home cleaning"
+              id: "1",              name: "Pre-Showing Refresh",              price: "Starting $199",              imageSrc: "http://img.b2bpic.net/free-photo/smiling-real-estate-agent-talking-with-couple-interested-buying-new-home_637285-6081.jpg?_wi=2",              imageAlt: "Pre-showing home cleaning"
             },
             {
-              id: "2",              name: "Full Staging Clean",              price: "Starting $399",              imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg",              imageAlt: "Full home staging cleaning"
+              id: "2",              name: "Full Staging Clean",              price: "Starting $399",              imageSrc: "http://img.b2bpic.net/free-photo/sweet-home_1098-16153.jpg?_wi=3",              imageAlt: "Full home staging cleaning"
             },
             {
-              id: "3",              name: "Post-Close Turnover",              price: "Starting $299",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg",              imageAlt: "Post-closing property cleaning"
+              id: "3",              name: "Post-Close Turnover",              price: "Starting $299",              imageSrc: "http://img.b2bpic.net/free-photo/woman-cleaning-house_53876-30618.jpg?_wi=5",              imageAlt: "Post-closing property cleaning"
             }
           ]}
         />
