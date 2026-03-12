@@ -42,8 +42,8 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplitDoubleCarousel
-          title="Professional House Cleaning for South New Jersey"
-          description="Magaly Reyes House Cleaning Services delivers expert residential and professional cleaning solutions. Serving South New Jersey with integrity, attention to detail, and exceptional customer care."
+          title="Professional  Cleaning Services for South New Jersey"
+          description="Magaly Reyes Cleaning Services delivers expert residential and professional cleaning solutions. Serving South New Jersey with integrity, attention to detail, and exceptional customer care."
           tag="Premium Cleaning Services"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
@@ -219,7 +219,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AQ3abHj7nJoV9DleXcQnubKTBh/uploaded-1772602282380-eg5rebjr.png?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AQ3abHj7nJoV9DleXcQnubKTBh/uploaded-1773327249368-z8f0w9f7.png"
           imageAlt="Magaly Reyes House Cleaning Services Logo"
           logoText="Magaly Reyes Cleaning"
           copyrightText="© 2025 Magaly Reyes House Cleaning Services. Proudly serving South New Jersey."
