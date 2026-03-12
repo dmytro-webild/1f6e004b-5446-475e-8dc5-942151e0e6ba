@@ -223,7 +223,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AQ3abHj7nJoV9DleXcQnubKTBh/uploaded-1772602282380-eg5rebjr.png"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AQ3abHj7nJoV9DleXcQnubKTBh/uploaded-1772602282380-eg5rebjr.png?_wi=1"
           imageAlt="Magaly Reyes House Cleaning Services Logo"
           logoText="Magaly Reyes Cleaning"
           copyrightText="© 2025 Magaly Reyes House Cleaning Services. Proudly serving South New Jersey."
