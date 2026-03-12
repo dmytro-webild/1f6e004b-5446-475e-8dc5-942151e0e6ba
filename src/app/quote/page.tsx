@@ -60,10 +60,10 @@ export default function QuoteRequestPage() {
         <NavbarLayoutFloatingInline
           brandName="Magaly's Cleaning"
           navItems={[
-            { name: "Services", id: "/" },
-            { name: "Realtor Program", id: "/" },
-            { name: "Pricing", id: "/" },
-            { name: "About", id: "/" }
+            { name: "Services", id: "/#services" },
+            { name: "Realtor Program", id: "/#realtor" },
+            { name: "Pricing", id: "/#pricing" },
+            { name: "About", id: "/#about" }
           ]}
           button={{ text: "Get a Quote", href: "/quote" }}
           animateOnLoad={true}
@@ -234,7 +234,7 @@ export default function QuoteRequestPage() {
               title: "Contact",              items: [
                 { label: "Phone", href: "tel:+16091234567" },
                 { label: "Email", href: "mailto:info@magalysreyes.com" },
-                { label: "Service Area", href: "/#" },
+                { label: "Service Area", href: "/#about" },
                 { label: "Book Now", href: "/quote" }
               ]
             }

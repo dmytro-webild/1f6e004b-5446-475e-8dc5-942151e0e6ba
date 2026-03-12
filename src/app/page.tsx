@@ -244,7 +244,7 @@ export default function LandingPage() {
               title: "Contact",              items: [
                 { label: "Phone", href: "tel:+16091234567" },
                 { label: "Email", href: "mailto:info@magalysreyes.com" },
-                { label: "Service Area", href: "#" },
+                { label: "Service Area", href: "#about" },
                 { label: "Book Now", href: "/quote" }
               ]
             }
