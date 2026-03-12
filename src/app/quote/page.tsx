@@ -63,8 +63,7 @@ export default function QuoteRequestPage() {
             { name: "Services", id: "/" },
             { name: "Realtor Program", id: "/" },
             { name: "Pricing", id: "/" },
-            { name: "About", id: "/" },
-            { name: "Quote Request", id: "/quote" }
+            { name: "About", id: "/" }
           ]}
           button={{ text: "Get a Quote", href: "/quote" }}
           animateOnLoad={true}

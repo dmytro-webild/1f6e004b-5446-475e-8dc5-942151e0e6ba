@@ -13,10 +13,6 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle } from 'lucide-react';
 
 export default function LandingPage() {
-  const handleCallNow = () => {
-    window.location.href = 'tel:+16091234567';
-  };
-
   return (
     <ThemeProvider
       defaultButtonVariant="shift-hover"
@@ -39,7 +35,7 @@ export default function LandingPage() {
             { name: "Pricing", id: "pricing" },
             { name: "About", id: "about" }
           ]}
-          button={{ text: "Call Now", onClick: handleCallNow }}
+          button={{ text: "Get a Quote", href: "/quote" }}
           animateOnLoad={true}
         />
       </div>
@@ -52,7 +48,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Get Your Free Quote", href: "#quote" },
+            { text: "Get Your Free Quote", href: "/quote" },
             { text: "Learn More", href: "#services" }
           ]}
           buttonAnimation="slide-up"
@@ -151,19 +147,19 @@ export default function LandingPage() {
           useInvertedBackground={false}
           plans={[
             {
-              id: "basic",              tag: "Starter Package",              price: "$150",              period: "/service",              description: "Perfect for small homes and regular maintenance.",              button: { text: "Schedule Now", href: "#quote" },
+              id: "basic",              tag: "Starter Package",              price: "$150",              period: "/service",              description: "Perfect for small homes and regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "Kitchen and bathroom cleaning",                "Bedroom and living area dusting",                "Floor vacuuming and mopping",                "Trash removal"
               ]
             },
             {
-              id: "professional",              tag: "Professional Package",              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes.",              button: { text: "Schedule Now", href: "#quote" },
+              id: "professional",              tag: "Professional Package",              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Starter services included",                "Deep appliance cleaning",                "Window and mirror cleaning",                "Detailed baseboard cleaning",                "Laundry assistance"
               ]
             },
             {
-              id: "premium",              tag: "Premium Deep Clean",              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services.",              button: { text: "Schedule Now", href: "#quote" },
+              id: "premium",              tag: "Premium Deep Clean",              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Professional services included",                "Carpet shampooing",                "Wall and light fixture cleaning",                "Garage or storage area cleaning",                "Post-construction cleanup",                "Spring/fall refresh service"
               ]
@@ -212,7 +208,7 @@ export default function LandingPage() {
           title="Ready for a Spotless Home?"
           description="Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
-            { text: "Request a Free Quote", href: "tel:+16091234567" },
+            { text: "Request a Free Quote", href: "/quote" },
             { text: "Email Us", href: "mailto:info@magalysreyes.com" }
           ]}
           buttonAnimation="slide-up"
@@ -241,7 +237,7 @@ export default function LandingPage() {
                 { label: "About Us", href: "#about" },
                 { label: "Pricing", href: "#pricing" },
                 { label: "Testimonials", href: "#testimonials" },
-                { label: "Get a Quote", href: "#quote" }
+                { label: "Get a Quote", href: "/quote" }
               ]
             },
             {
@@ -249,7 +245,7 @@ export default function LandingPage() {
                 { label: "Phone", href: "tel:+16091234567" },
                 { label: "Email", href: "mailto:info@magalysreyes.com" },
                 { label: "Service Area", href: "#" },
-                { label: "Book Now", href: "#quote" }
+                { label: "Book Now", href: "/quote" }
               ]
             }
           ]}
