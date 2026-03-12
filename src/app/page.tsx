@@ -206,7 +206,7 @@ export default function LandingPage() {
           tagIcon={Phone}
           tagAnimation="slide-up"
           title="Ready for a Spotless Home?"
-          description="Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
+          description="Free quote in under 2 minutes. No commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
             { text: "Request a Free Quote", href: "/quote" },
             { text: "Email Us", href: "mailto:info@magalysreyes.com" }
