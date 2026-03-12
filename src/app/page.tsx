@@ -10,7 +10,7 @@ import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle } from 'lucide-react';
+import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle, Shield } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -147,19 +147,19 @@ export default function LandingPage() {
           useInvertedBackground={false}
           plans={[
             {
-              id: "basic",              tag: "Starter Package",              price: "$150",              period: "/service",              description: "Perfect for small homes and regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "basic",              tag: "Starter Package",              tagIcon: CheckCircle,              price: "$150",              period: "/service",              description: "Perfect for small homes and reliable regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "Kitchen and bathroom cleaning",                "Bedroom and living area dusting",                "Floor vacuuming and mopping",                "Trash removal"
               ]
             },
             {
-              id: "professional",              tag: "Professional Package",              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "professional",              tag: "Professional Package",              tagIcon: CheckCircle,              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes. Most Popular choice for complete home care.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Starter services included",                "Deep appliance cleaning",                "Window and mirror cleaning",                "Detailed baseboard cleaning",                "Laundry assistance"
               ]
             },
             {
-              id: "premium",              tag: "Premium Deep Clean",              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "premium",              tag: "Premium Deep Clean",              tagIcon: Shield,              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services. Best Value for maximum results and peace of mind.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Professional services included",                "Carpet shampooing",                "Wall and light fixture cleaning",                "Garage or storage area cleaning",                "Post-construction cleanup",                "Spring/fall refresh service"
               ]
