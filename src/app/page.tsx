@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
-          brandName="Magaly's Cleaning"
+          brandName="MRCS"
           navItems={[
             { name: "Services", id: "services" },
             { name: "Realtor Program", id: "realtor" },
