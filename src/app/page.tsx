@@ -13,6 +13,10 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle } from 'lucide-react';
 
 export default function LandingPage() {
+  const handleCallNow = () => {
+    window.location.href = 'tel:+16091234567';
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="shift-hover"
@@ -35,7 +39,7 @@ export default function LandingPage() {
             { name: "Pricing", id: "pricing" },
             { name: "About", id: "about" }
           ]}
-          button={{ text: "Get a Quote", href: "#quote" }}
+          button={{ text: "Call Now", onClick: handleCallNow }}
           animateOnLoad={true}
         />
       </div>
