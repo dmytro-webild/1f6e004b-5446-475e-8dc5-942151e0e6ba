@@ -138,7 +138,7 @@ export default function LandingPage() {
       <div id="pricing" data-section="pricing">
         <PricingCardFive
           title="Transparent Pricing"
-          description="Simple, honest pricing with no hidden fees. Every service is customized to your needs."
+          description="Flexible Plans Starting at $150 — Pay Only for What You Need, No Contracts Required"
           tag="Affordable Excellence"
           tagIcon={DollarSign}
           tagAnimation="slide-up"
