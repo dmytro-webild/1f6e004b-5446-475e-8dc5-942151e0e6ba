@@ -227,10 +227,10 @@ export default function LandingPage() {
           columns={[
             {
               title: "Services",              items: [
-                { label: "Residential Cleaning", href: "#services" },
-                { label: "Deep Cleaning", href: "#services" },
-                { label: "Move-Out Cleaning", href: "#services" },
-                { label: "Realtor Program", href: "#realtor" }
+                { label: "Residential Cleaning", href: "/#services" },
+                { label: "Deep Cleaning", href: "/#services" },
+                { label: "Move-Out Cleaning", href: "/#services" },
+                { label: "Realtor Program", href: "/#realtor" }
               ]
             },
             {
