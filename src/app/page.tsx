@@ -43,7 +43,7 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroSplitDoubleCarousel
           title="Professional  Cleaning Services for South New Jersey"
-          description="Magaly Reyes Cleaning Services delivers expert residential and professional cleaning solutions. Serving South New Jersey with integrity, attention to detail, and exceptional customer care."
+          description="Save 10+ hours monthly on cleaning while your home stays immaculate. Our expert residential and professional cleaning solutions ensure your South New Jersey home receives the meticulous care it deserves."
           tag="Premium Cleaning Services"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
