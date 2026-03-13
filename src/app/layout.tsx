@@ -4,7 +4,6 @@ import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",  subsets: ["latin"],
@@ -52,7 +51,7 @@ export default function RootLayout({
         <body
           className={`${montserrat.variable} ${halant.variable} ${inter.variable} antialiased`}
         >
-          <Tag />
+          
           {children}
         
         <script
