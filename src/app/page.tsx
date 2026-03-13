@@ -49,7 +49,7 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           buttons={[
             { text: "Get Your Free Quote", href: "/quote" },
-            { text: "Learn More", href: "#services" }
+            { text: "Learn More", href: "/quote" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
