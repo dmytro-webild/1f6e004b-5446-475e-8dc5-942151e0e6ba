@@ -196,7 +196,10 @@ export default function QuoteRequestPage() {
             <div className="bg-card rounded-lg p-6 border border-foreground/10 text-center">
               <Phone className="w-8 h-8 mx-auto mb-3 text-primary-cta" />
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <a href="tel:+16091234567" className="text-primary-cta hover:underline">(609) 123-4567</a>
+              <div className="space-y-2">
+                <a href="tel:+18567776413" className="text-primary-cta hover:underline block">(856) 777-6413</a>
+                <a href="tel:+13512447819" className="text-primary-cta hover:underline block">(351) 244-7819</a>
+              </div>
             </div>
             <div className="bg-card rounded-lg p-6 border border-foreground/10 text-center">
               <Mail className="w-8 h-8 mx-auto mb-3 text-primary-cta" />
