@@ -204,7 +204,7 @@ export default function QuoteRequestPage() {
             <div className="bg-card rounded-lg p-6 border border-foreground/10 text-center">
               <Mail className="w-8 h-8 mx-auto mb-3 text-primary-cta" />
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <a href="mailto:info@magalysreyes.com" className="text-primary-cta hover:underline">info@magalysreyes.com</a>
+              <a href="mailto:reyeslopezmagalys@gmail.com" className="text-primary-cta hover:underline">reyeslopezmagalys@gmail.com</a>
             </div>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function QuoteRequestPage() {
             {
               title: "Contact",              items: [
                 { label: "Phone", href: "tel:+16091234567" },
-                { label: "Email", href: "mailto:info@magalysreyes.com" },
+                { label: "Email", href: "mailto:reyeslopezmagalys@gmail.com" },
                 { label: "Service Area", href: "/#about" },
                 { label: "Book Now", href: "/quote" }
               ]
