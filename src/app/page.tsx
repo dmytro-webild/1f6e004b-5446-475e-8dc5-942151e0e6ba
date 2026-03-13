@@ -206,7 +206,7 @@ export default function LandingPage() {
           tagIcon={Phone}
           tagAnimation="slide-up"
           title="Ready for a Spotless Home?"
-          description="Free quote in under 2 minutes. No commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
+          description="Free quote in under 2 minutes. Call now at (609) 123-4567 or get your quote online—no commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
             { text: "Request a Free Quote", href: "/quote" },
             { text: "Email Us", href: "mailto:info@magalysreyes.com" }
@@ -214,6 +214,7 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
+          buttonClassName="bg-gradient-to-r from-primary-cta via-primary-cta to-primary-cta hover:shadow-2xl hover:shadow-primary-cta/50 text-white font-extrabold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
         />
       </div>
 
