@@ -209,7 +209,7 @@ export default function LandingPage() {
           description="Free quote in under 2 minutes. Call now at (609) 123-4567 or get your quote online—no commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
             { text: "Request a Free Quote", href: "/quote" },
-            { text: "Email Us", href: "mailto:info@magalysreyes.com" }
+            { text: "Email Us", href: "mailto:reyeslopezmagalys@gmail.com" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
@@ -244,7 +244,7 @@ export default function LandingPage() {
             {
               title: "Contact",              items: [
                 { label: "Phone", href: "tel:+16091234567" },
-                { label: "Email", href: "mailto:info@magalysreyes.com" },
+                { label: "Email", href: "mailto:reyeslopezmagalys@gmail.com" },
                 { label: "Service Area", href: "#about" },
                 { label: "Book Now", href: "/quote" }
               ]
