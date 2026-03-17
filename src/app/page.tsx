@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -10,7 +10,7 @@ import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle, Shield, Facebook } from 'lucide-react';
+import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle, Shield } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -35,8 +35,7 @@ export default function LandingPage() {
             { name: "Pricing", id: "pricing" },
             { name: "About", id: "about" }
           ]}
-          button={{ text: "Get a Quote", href: "/quote" }}
-          animateOnLoad={true}
+          button={{ text: "Get a Quote", href: "#quote" }}
         />
       </div>
 
@@ -48,8 +47,8 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Get Your Free Quote", href: "/quote" },
-            { text: "Learn More", href: "/quote" }
+            { text: "Get Your Free Quote", href: "#quote" },
+            { text: "Learn More", href: "#services" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
@@ -148,21 +147,21 @@ export default function LandingPage() {
           plans={[
             {
               id: "basic",              tag: "Starter Package",              tagIcon: CheckCircle,
-              price: "$150",              period: "/service",              description: "Perfect for small homes and reliable regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
+              price: "$150",              period: "/service",              description: "Perfect for small homes and reliable regular maintenance.",              button: { text: "Schedule Now", href: "#quote" },
               featuresTitle: "Included Services:",              features: [
                 "Kitchen and bathroom cleaning",                "Bedroom and living area dusting",                "Floor vacuuming and mopping",                "Trash removal"
               ]
             },
             {
               id: "professional",              tag: "Professional Package",              tagIcon: CheckCircle,
-              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes. Most Popular choice for complete home care.",              button: { text: "Schedule Now", href: "/quote" },
+              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes. Most Popular choice for complete home care.",              button: { text: "Schedule Now", href: "#quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Starter services included",                "Deep appliance cleaning",                "Window and mirror cleaning",                "Detailed baseboard cleaning",                "Laundry assistance"
               ]
             },
             {
               id: "premium",              tag: "Premium Deep Clean",              tagIcon: Shield,
-              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services. Best Value for maximum results and peace of mind.",              button: { text: "Schedule Now", href: "/quote" },
+              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services. Best Value for maximum results and peace of mind.",              button: { text: "Schedule Now", href: "#quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Professional services included",                "Carpet shampooing",                "Wall and light fixture cleaning",                "Garage or storage area cleaning",                "Post-construction cleanup",                "Spring/fall refresh service"
               ]
@@ -211,14 +210,13 @@ export default function LandingPage() {
           title="Ready for a Spotless Home?"
           description="Free quote in under 2 minutes. Call now at (609) 123-4567 or get your quote online—no commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
-            { text: "Request a Free Quote", href: "/quote" },
+            { text: "Request a Free Quote", href: "#quote" },
             { text: "Email Us", href: "mailto:reyeslopezmagalys@gmail.com" },
             { text: "Follow Us on Facebook", href: "https://www.facebook.com/profile.php?id=61587868057000" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
-          buttonClassName="bg-gradient-to-r from-primary-cta via-primary-cta to-primary-cta hover:shadow-2xl hover:shadow-primary-cta/50 text-white font-extrabold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
         />
       </div>
 
@@ -231,10 +229,10 @@ export default function LandingPage() {
           columns={[
             {
               title: "Services",              items: [
-                { label: "Residential Cleaning", href: "/#services" },
-                { label: "Deep Cleaning", href: "/#services" },
-                { label: "Move-Out Cleaning", href: "/#services" },
-                { label: "Realtor Program", href: "/#realtor" }
+                { label: "Residential Cleaning", href: "#services" },
+                { label: "Deep Cleaning", href: "#services" },
+                { label: "Move-Out Cleaning", href: "#services" },
+                { label: "Realtor Program", href: "#realtor" }
               ]
             },
             {
@@ -242,7 +240,7 @@ export default function LandingPage() {
                 { label: "About Us", href: "#about" },
                 { label: "Pricing", href: "#pricing" },
                 { label: "Testimonials", href: "#testimonials" },
-                { label: "Get a Quote", href: "/quote" }
+                { label: "Get a Quote", href: "#quote" }
               ]
             },
             {
@@ -250,7 +248,7 @@ export default function LandingPage() {
                 { label: "Phone", href: "tel:+16091234567" },
                 { label: "Email", href: "mailto:reyeslopezmagalys@gmail.com" },
                 { label: "Service Area", href: "#about" },
-                { label: "Book Now", href: "/quote" }
+                { label: "Book Now", href: "#quote" }
               ]
             }
           ]}
