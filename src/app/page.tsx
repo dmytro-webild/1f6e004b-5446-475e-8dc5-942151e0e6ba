@@ -10,7 +10,7 @@ import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle, Shield } from 'lucide-react';
+import { Sparkles, Zap, Briefcase, DollarSign, Heart, Phone, Home, Star, MapPin, CheckCircle, Shield, Facebook } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -147,19 +147,22 @@ export default function LandingPage() {
           useInvertedBackground={false}
           plans={[
             {
-              id: "basic",              tag: "Starter Package",              tagIcon: CheckCircle,              price: "$150",              period: "/service",              description: "Perfect for small homes and reliable regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "basic",              tag: "Starter Package",              tagIcon: CheckCircle,
+              price: "$150",              period: "/service",              description: "Perfect for small homes and reliable regular maintenance.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "Kitchen and bathroom cleaning",                "Bedroom and living area dusting",                "Floor vacuuming and mopping",                "Trash removal"
               ]
             },
             {
-              id: "professional",              tag: "Professional Package",              tagIcon: CheckCircle,              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes. Most Popular choice for complete home care.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "professional",              tag: "Professional Package",              tagIcon: CheckCircle,
+              price: "$275",              period: "/service",              description: "Comprehensive cleaning for larger homes. Most Popular choice for complete home care.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Starter services included",                "Deep appliance cleaning",                "Window and mirror cleaning",                "Detailed baseboard cleaning",                "Laundry assistance"
               ]
             },
             {
-              id: "premium",              tag: "Premium Deep Clean",              tagIcon: Shield,              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services. Best Value for maximum results and peace of mind.",              button: { text: "Schedule Now", href: "/quote" },
+              id: "premium",              tag: "Premium Deep Clean",              tagIcon: Shield,
+              price: "$450",              period: "/service",              description: "Thorough deep cleaning and specialized services. Best Value for maximum results and peace of mind.",              button: { text: "Schedule Now", href: "/quote" },
               featuresTitle: "Included Services:",              features: [
                 "All Professional services included",                "Carpet shampooing",                "Wall and light fixture cleaning",                "Garage or storage area cleaning",                "Post-construction cleanup",                "Spring/fall refresh service"
               ]
@@ -209,7 +212,8 @@ export default function LandingPage() {
           description="Free quote in under 2 minutes. Call now at (609) 123-4567 or get your quote online—no commitment required. Contact Magaly Reyes House Cleaning Services for your free quote. We serve all of South New Jersey and are committed to exceeding your expectations."
           buttons={[
             { text: "Request a Free Quote", href: "/quote" },
-            { text: "Email Us", href: "mailto:reyeslopezmagalys@gmail.com" }
+            { text: "Email Us", href: "mailto:reyeslopezmagalys@gmail.com" },
+            { text: "Follow Us on Facebook", href: "https://www.facebook.com/profile.php?id=61587868057000" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
