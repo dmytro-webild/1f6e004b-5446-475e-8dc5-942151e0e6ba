@@ -30,10 +30,10 @@ export default function LandingPage() {
         <NavbarLayoutFloatingInline
           brandName="MRCS"
           navItems={[
-            { name: "Services", id: "services" },
-            { name: "Realtor Program", id: "realtor" },
-            { name: "Pricing", id: "pricing" },
-            { name: "About", id: "about" }
+            { name: "Services", id: "#services" },
+            { name: "Realtor Program", id: "#realtor" },
+            { name: "Pricing", id: "#pricing" },
+            { name: "Contact Us", id: "/contact-us" }
           ]}
           button={{ text: "Get a Quote", href: "#quote" }}
         />

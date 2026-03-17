@@ -60,10 +60,11 @@ export default function QuoteRequestPage() {
         <NavbarLayoutFloatingInline
           brandName="MRCS"
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Services", id: "/#services" },
             { name: "Realtor Program", id: "/#realtor" },
             { name: "Pricing", id: "/#pricing" },
-            { name: "About", id: "/#about" }
+            { name: "Contact Us", id: "/contact-us" }
           ]}
           button={{ text: "Get a Quote", href: "/quote" }}
           animateOnLoad={true}
@@ -237,7 +238,7 @@ export default function QuoteRequestPage() {
               title: "Contact",              items: [
                 { label: "Phone", href: "tel:+16091234567" },
                 { label: "Email", href: "mailto:reyeslopezmagalys@gmail.com" },
-                { label: "Service Area", href: "/#about" },
+                { label: "Contact Us", href: "/contact-us" },
                 { label: "Book Now", href: "/quote" }
               ]
             }
