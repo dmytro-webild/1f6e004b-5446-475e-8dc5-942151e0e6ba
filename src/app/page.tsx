@@ -41,7 +41,7 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplitDoubleCarousel
-          title="Reclaim 10+ Hours Monthly — Expert Home Cleaning for South New Jersey"
+          title="Home Cleaning for South New Jersey"
           description="Reclaim 10+ hours monthly while your South New Jersey home stays immaculate. Our residential cleaning services handle the work, so you have more time for what matters. No hassle, no contracts—just reliable, professional care."
           tag="Premium Cleaning Services"
           tagIcon={Sparkles}
