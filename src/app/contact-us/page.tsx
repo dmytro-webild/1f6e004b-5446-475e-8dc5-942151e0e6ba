@@ -12,8 +12,9 @@ export default function ContactUsPage() {
 
   useEffect(() => {
     // Load Facebook SDK
-    if (!window.fbAsyncInit) {
-      window.fbAsyncInit = function() {
+    const loadFacebookSDK = () => {
+      (window as any).fbAsyncInit = function() {
+        const FB = (window as any).FB;
         FB.init({
           appId: 'YOUR_APP_ID',
           xfbml: true,
@@ -22,10 +23,11 @@ export default function ContactUsPage() {
         FB.XFBML.parse();
         setFbSDKLoaded(true);
       };
-    }
+    };
 
     // Load Facebook SDK script
     if (!document.getElementById('facebook-jssdk')) {
+      loadFacebookSDK();
       const script = document.createElement('script');
       script.id = 'facebook-jssdk';
       script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=YOUR_APP_ID';
@@ -39,7 +41,8 @@ export default function ContactUsPage() {
 
     // Set up interval to refresh Facebook feed
     const refreshInterval = setInterval(() => {
-      if (window.FB) {
+      const FB = (window as any).FB;
+      if (FB) {
         FB.XFBML.parse();
       }
     }, 30000); // Refresh every 30 seconds
