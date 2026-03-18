@@ -81,20 +81,28 @@ export default function ContactUsPage() {
           {/* Facebook Page Feed Section */}
           <div className="bg-card rounded-lg p-8 border border-foreground/10 mb-12">
             <h2 className="text-2xl font-bold mb-6 text-center">Latest from Our Facebook</h2>
-            <div className="flex justify-center items-center bg-background/50 rounded-lg p-8 min-h-96">
-              <iframe 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18A8opG93t%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" 
-                width="500" 
-                height="600" 
+            <div className="flex justify-center items-center bg-background/50 rounded-lg p-8 min-h-96 w-full overflow-x-auto">
+              <div 
                 style={{
-                  border: 'none',
-                  overflow: 'hidden',
-                  borderRadius: '8px',
-                  maxWidth: '100%'
+                  width: '100%',
+                  maxWidth: '500px',
+                  minHeight: '600px'
                 }}
-                allowFullScreen={true}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              />
+              >
+                <iframe 
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18A8opG93t%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                  width="100%"
+                  height="600" 
+                  style={{
+                    border: 'none',
+                    overflow: 'hidden',
+                    borderRadius: '8px',
+                    display: 'block'
+                  }}
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
             </div>
           </div>
 
