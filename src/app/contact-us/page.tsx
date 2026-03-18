@@ -72,7 +72,7 @@ export default function ContactUsPage() {
             <div className="bg-card rounded-lg p-6 border border-foreground/10 text-center">
               <Facebook className="w-8 h-8 mx-auto mb-3 text-primary-cta" />
               <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-              <a href="https://www.facebook.com/profile.php?id=61587868057000" target="_blank" rel="noopener noreferrer" className="text-primary-cta hover:underline block">
+              <a href="https://www.facebook.com/share/18A8opG93t/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-primary-cta hover:underline block">
                 Visit Facebook Page
               </a>
             </div>
@@ -83,7 +83,7 @@ export default function ContactUsPage() {
             <h2 className="text-2xl font-bold mb-6 text-center">Latest from Our Facebook</h2>
             <div className="flex justify-center items-center bg-background/50 rounded-lg p-8 min-h-96">
               <iframe 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61587868057000&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18A8opG93t%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" 
                 width="500" 
                 height="600" 
                 style={{
