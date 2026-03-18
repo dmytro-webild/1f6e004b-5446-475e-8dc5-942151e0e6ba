@@ -5,8 +5,48 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export default function ContactUsPage() {
+  const [fbSDKLoaded, setFbSDKLoaded] = useState(false);
+
+  useEffect(() => {
+    // Load Facebook SDK
+    if (!window.fbAsyncInit) {
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: 'YOUR_APP_ID',
+          xfbml: true,
+          version: 'v18.0'
+        });
+        FB.XFBML.parse();
+        setFbSDKLoaded(true);
+      };
+    }
+
+    // Load Facebook SDK script
+    if (!document.getElementById('facebook-jssdk')) {
+      const script = document.createElement('script');
+      script.id = 'facebook-jssdk';
+      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=YOUR_APP_ID';
+      script.async = true;
+      script.defer = true;
+      script.crossOrigin = 'anonymous';
+      document.body.appendChild(script);
+    } else {
+      setFbSDKLoaded(true);
+    }
+
+    // Set up interval to refresh Facebook feed
+    const refreshInterval = setInterval(() => {
+      if (window.FB) {
+        FB.XFBML.parse();
+      }
+    }, 30000); // Refresh every 30 seconds
+
+    return () => clearInterval(refreshInterval);
+  }, []);
+
   return (
     <ThemeProvider
       defaultButtonVariant="shift-hover"
@@ -72,7 +112,7 @@ export default function ContactUsPage() {
             <div className="bg-card rounded-lg p-6 border border-foreground/10 text-center">
               <Facebook className="w-8 h-8 mx-auto mb-3 text-primary-cta" />
               <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-              <a href="https://www.facebook.com/share/18A8opG93t/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-primary-cta hover:underline block">
+              <a href="https://www.facebook.com/profile.php?id=61587868057000" target="_blank" rel="noopener noreferrer" className="text-primary-cta hover:underline block">
                 Visit Facebook Page
               </a>
             </div>
@@ -81,19 +121,20 @@ export default function ContactUsPage() {
           {/* Facebook Page Feed Section */}
           <div className="bg-card rounded-lg p-8 border border-foreground/10 mb-12">
             <h2 className="text-2xl font-bold mb-6 text-center">Latest from Our Facebook</h2>
-            <div className="flex justify-center items-center bg-background/50 rounded-lg p-8 min-h-96" id="facebook-feed" data-section="facebook-feed">
+            <div className="flex justify-center items-start bg-background/50 rounded-lg p-8 min-h-screen" id="facebook-feed" data-section="facebook-feed">
               <div 
                 className="fb-page" 
                 data-href="https://www.facebook.com/profile.php?id=61587868057000" 
                 data-tabs="timeline" 
-                data-width="500" 
-                data-height="600" 
+                data-width="100%" 
+                data-height="800"
                 data-small-header="false" 
                 data-adapt-container-width="true" 
                 data-hide-cover="false" 
                 data-show-facepile="true"
               />
             </div>
+            <p className="text-center text-sm text-foreground/60 mt-4">Facebook feed automatically updates with new posts from our page</p>
           </div>
 
           {/* Additional Contact Section */}
@@ -143,8 +184,6 @@ export default function ContactUsPage() {
           ]}
         />
       </div>
-
-      <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=YOUR_APP_ID" />
     </ThemeProvider>
   );
 }
