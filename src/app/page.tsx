@@ -47,7 +47,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Get Free Quote in 2 Minutes", href: "/quote" },
+            { text: "Get Free Quote in 2 Minutes", href: "/contact-us" },
             { text: "Learn More", href: "#services" }
           ]}
           buttonAnimation="slide-up"
