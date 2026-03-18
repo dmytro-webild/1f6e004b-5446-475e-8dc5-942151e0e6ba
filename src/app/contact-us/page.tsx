@@ -78,14 +78,14 @@ export default function ContactUsPage() {
             </div>
           </div>
 
-          {/* Facebook Posts Section */}
+          {/* Facebook Page Feed Section */}
           <div className="bg-card rounded-lg p-8 border border-foreground/10 mb-12">
             <h2 className="text-2xl font-bold mb-6 text-center">Latest from Our Facebook</h2>
             <div className="flex justify-center items-center bg-background/50 rounded-lg p-8 min-h-96">
               <iframe 
-                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18A8opG93t%2F&show_text=true&width=500&appId" 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61587868057000&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" 
                 width="500" 
-                height="400" 
+                height="600" 
                 style={{
                   border: 'none',
                   overflow: 'hidden',
